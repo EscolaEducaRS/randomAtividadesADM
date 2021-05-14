@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Atividades ADM</title>
+    <link rel="stylesheet" href="mystylecss.css">
+</head>
+<body>
+
+        <table class="priTableclass">
+            <thead>
+              <tr>
+                <th rowspan="3" class="menuThclass">
+                    <p></p>
+                    M<br>e<br>n<br>u<br> 
+                    <br>P<br>r<br>i<br>n<br>c<br>i<br>p<br>a<br>l<br><p></p>
+                </th>
+                <th colspan="2" class="headThclass">
+                    Sistema de Criação de Atividades Randomicas de ADM <br> SCAR-ADM
+                </th>
+              </tr>
+              <tr>
+                <td colspan="2" class="midThclass">
+
+                    <table class="intTableclass">
+
+                          <tr>
+                            <td>Nome:</td>
+                            <td colspan="2"><input type="text" id="nomeInputid"></td>
+                          </tr>
+                          <tr>
+                            <td>Ano:</td>
+                            <td colspan="2">
+
+                                <select name="select" id="anoInputid">
+                                    <option value="valor1">2013</option>
+                                    <option value="valor2">2014</option>
+                                    <option value="valor3">2015</option>
+                                    <option value="valor4">2016</option>
+                                    <option value="valor5">2017</option>
+                                    <option value="valor6">2018</option>
+                                    <option value="valor7">2019</option>
+                                    <option value="valor8">2020</option>
+                                    <option value="valor9" selected>2021</option>
+                                </select>
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Salário:</td>
+                            <td colspan="2"><input type="text" id="salInputid" disabled></td>
+                          </tr>
+                          <tr>
+                            <td>Periculosidade:</td>
+                            <td colspan="2"><input type="checkbox" id="perInputid"></td>
+                          </tr>
+                          <tr>
+                            <td>Insalubridade:</td>
+                            <td colspan="2"><input type="checkbox" id="InsInputid"></td>
+                          </tr>
+                          <tr>
+                            <td>Adicional Noturno:</td>
+                            <td colspan="2"><input type="checkbox" id="anotInputid"></td>
+                          </tr>
+                          <tr>
+                            <td>Horas Extras:</td>
+                            <td colspan="2"><input type="checkbox" id="heInputid"></td>
+                          </tr>
+                          <tr>
+                            <td>Liquido:</td>
+                            <td colspan="2"><input type="checkbox" id="liqInputid"></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td colspan="2" align="right">
+                                <input type="submit" value="Formular!" id="submitInputid" onclick="formularClique()"></td>
+                          </tr>
+
+                    </table>
+
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" class="bottonThclass">
+                    Atividade: <br>
+                    <br>
+                    <div id="respDivid" class="respDivclass">
+                        1.2.3...
+                    </div>
+                </td>
+              </tr>
+            </thead>
+        </table>
+
+
+    <script src="./modulo.js" type="text/javascript"></script>
+
+</body>
+</html>
