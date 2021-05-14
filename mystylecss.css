@@ -4,37 +4,31 @@ body, html{
     padding: 0em;
     background-color: darkblue;
 }
-.headThclass{
+
+.headThclass, .bottonThclass{
     background-color: blue;
-    border-spacing: 0em;
     margin: 0em;
     padding: 0em;
     box-shadow: 2px 2px 2px 1px rgb(80, 80, 80);
     font-size: 2em;
+    padding: 5px;
 }
 
-.bottonThclass{
-    background-color:blue;
-    padding: 0em;
-    margin: 0em;
-    box-shadow: 2px 2px 2px 1px rgb(80, 80, 80);
-    font-size: 2em;
-
-}
 .midThclass{
     background-color: burlywood;
     border-spacing: 0em;
     margin: 0em;
-    padding: 0em;
+    padding: 5px;
     width: 65%;
     box-shadow: 2px 2px 2px 1px rgb(80, 80, 80);
     font-size: 2em;
 }
 .menuThclass{
-    width: 32%;
+    width: 28%;
     background-color:darkviolet;
     box-shadow: 2px 2px 2px 1px rgb(80, 80, 80);
     font-size: 2em;
+    padding: 5px;
     
 }
 
