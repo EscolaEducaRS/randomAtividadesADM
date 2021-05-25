@@ -5,12 +5,20 @@ body, html{
     background-color: darkblue;
 }
 
-.headThclass, .bottonThclass{
+.headThclass{
     background-color: blue;
     margin: 0em;
-    padding: 0em;
     box-shadow: 2px 2px 2px 1px rgb(80, 80, 80);
-    font-size: 2em;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.bottonThclass{
+    background-color: blue;
+    margin: 0em;
+    box-shadow: 2px 2px 2px 1px rgb(80, 80, 80);
+    font-size: 20px;
+    color: rgb(255, 255, 255);
     padding: 5px;
 }
 
@@ -21,13 +29,13 @@ body, html{
     padding: 5px;
     width: 65%;
     box-shadow: 2px 2px 2px 1px rgb(80, 80, 80);
-    font-size: 2em;
+    font-size: 20px;
 }
 .menuThclass{
-    width: 28%;
+    width: 26%;
     background-color:darkviolet;
     box-shadow: 2px 2px 2px 1px rgb(80, 80, 80);
-    font-size: 2em;
+    font-size: 20px;
     padding: 5px;
     
 }
@@ -48,4 +56,8 @@ input {
     padding: 3px;
     border: 1px solid #ccc;
     color: #333;
+  }
+
+  .imgLogoClass{
+      height: 20%;
   }

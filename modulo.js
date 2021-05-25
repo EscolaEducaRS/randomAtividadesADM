@@ -56,6 +56,15 @@ var finalVar = {
     "8" : " calcule a remuneração do mês de Julho"
 }
 
+var chVar = {
+    "0" : " para trabalhar ",
+    "1" : " sua carga horária é de "
+
+}
+
+
+
+
 var respVar = document.getElementById("respDivid")
 
 
@@ -99,8 +108,12 @@ function formularClique() {
         var finalsinho2 = ""
     }
 
+    //Carga Horária -------------------------
+    let cargahorariaVar = chVar[Math.floor(Math.random() * 2)] + ((Math.floor(Math.random() * 7)*10)+160) + " horas por mês, "
+    
     
 
+    //resultado Final ------------------------
     let adicionais1 = periculo + insalubre + adnoturno
     let horasextras1 = horasextra
 
@@ -108,7 +121,7 @@ function formularClique() {
 
     let resultadoLet = nomeVar.value + inicio1[Math.floor(Math.random() * 2)]
     + anoTakeLet + inicio2[0]
-    let resultadoLet2 = salarioEmReais[0] + adicionais1 + horasextras1
+    let resultadoLet2 = salarioEmReais[0] + cargahorariaVar + adicionais1 + horasextras1
     respVar.innerHTML = resultadoLet + " R$ " + Math.floor(Math.random() * 3000 + 700) + ",00"
     + resultadoLet2 + finalsinho1 + finalsinho2 + ": "
 
