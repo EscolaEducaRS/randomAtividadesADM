@@ -17,7 +17,7 @@ body, html{
     background-color: blue;
     margin: 0em;
     box-shadow: 2px 2px 2px 1px rgb(80, 80, 80);
-    font-size: 20px;
+    font-size: 26px;
     color: rgb(255, 255, 255);
     padding: 5px;
 }
@@ -56,8 +56,17 @@ input {
     padding: 3px;
     border: 1px solid #ccc;
     color: #333;
-  }
+    border-radius:10px;
+}
 
-  .imgLogoClass{
+.imgLogoClass{
       height: 20%;
-  }
+}
+
+.nivelInputclass{
+    padding: 5px;
+    border: 0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius:10px;
+    font-family: inherit;
+}
