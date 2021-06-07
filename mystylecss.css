@@ -17,9 +17,11 @@ body, html{
     background-color: blue;
     margin: 0em;
     box-shadow: 2px 2px 2px 1px rgb(80, 80, 80);
-    font-size: 26px;
+    font-size: 30px;
     color: rgb(255, 255, 255);
-    padding: 5px;
+    padding: 10px;
+    text-align: justify;
+    font-weight: bold;
 }
 
 .midThclass{

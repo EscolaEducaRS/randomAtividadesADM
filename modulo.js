@@ -1,11 +1,15 @@
 
     var inicio1 = {
-        "0": " trabalha em uma empresa no ano de ",
-        "1": " começou a trabalhar em uma empresa no ano de "
+        "0": " trabalha em uma empresa ",
+        "1": " começou a trabalhar em uma empresa ",
+        "2": " que trabalha em uma empresa ",
+        "3": " em regime de CLT trabala em uma empresa "
     }
     
     var inicio2 = {
-        "0": " com um salário de "
+        "0": " com um salário de ",
+        "1": " com um salário em carteira de ",
+        "2": " com o registro salárial de "
     }
 
     var salarioEmReais = {
@@ -53,7 +57,9 @@ var finalVar = {
     "5" : " calcule a remuneração do mês de Agosto",
     "6" : " calcule a remuneração do mês de Maio",
     "7" : " calcule a remuneração do mês de Janeiro",
-    "8" : " calcule a remuneração do mês de Julho"
+    "8" : " calcule a remuneração do mês de Julho",
+    "9" : " calcule a remuneração do mês de Junho",
+    "10" : " calcule a remuneração do mês de Novembro"
 }
 
 var chVar = {
@@ -62,11 +68,7 @@ var chVar = {
 
 }
 
-
-
-
 var respVar = document.getElementById("respDivid")
-
 
 function formularClique() {
     if (nomeVar.value == ""){
@@ -74,21 +76,22 @@ function formularClique() {
     }
     let anoTakeLet = anoVar.options[anoVar.selectedIndex].text;
     
-
     if (perVar.checked == true) {
+        
         var periculo = " recebe periculosidade, "
     } else {
         var periculo = ""
     }
 
     if (insVar.checked == true) {
-        var insalubre = " recebe insalubridade, " + grauInsalubridade[Math.floor(Math.random() * 3)]
+        
+        var insalubre = " recebe insalubridade em " + grauInsalubridade[Math.floor(Math.random() * 3)]
     } else {
         var insalubre = ""
     }
 
     if (anotVar.checked == true) {
-        var adnoturno = " faz, " + Math.floor(Math.random() * 8 + 2) + " horas noturnas, "
+        var adnoturno = " faz " + Math.floor(Math.random() * 8 + 2) + " horas noturnas, "
     } else {
         var adnoturno = ""
     }
@@ -100,7 +103,7 @@ function formularClique() {
         var horasextra = ""
     }
 
-    let finalsinho1 = finalVar[Math.floor(Math.random() * 8)]
+    let finalsinho1 = finalVar[Math.floor(Math.random() * 11)]
 
     if (liquiVar.checked == true) {
         var finalsinho2 = " e o salário Liquido"
@@ -110,19 +113,19 @@ function formularClique() {
 
     //Carga Horária -------------------------
     let cargahorariaVar = chVar[Math.floor(Math.random() * 2)] + ((Math.floor(Math.random() * 7)*10)+160) + " horas por mês, "
-    
-    
 
     //resultado Final ------------------------
     let adicionais1 = periculo + insalubre + adnoturno
     let horasextras1 = horasextra
 
     //Math.floor(Math.random() * 2)
-
+    
     let resultadoLet = nomeVar.value + inicio1[Math.floor(Math.random() * 2)]
-    + anoTakeLet + inicio2[0]
+    + inicio2[0]
     let resultadoLet2 = salarioEmReais[0] + cargahorariaVar + adicionais1 + horasextras1
-    respVar.innerHTML = resultadoLet + " R$ " + Math.floor(Math.random() * 3000 + 700) + ",00"
-    + resultadoLet2 + finalsinho1 + finalsinho2 + ": "
+
+    respVar.innerHTML = resultadoLet + " R$ " + Math.floor(Math.random() * 3000 + 900) + ",00"
+    + resultadoLet2 + finalsinho1 +  "/" + anoTakeLet + finalsinho2 + ": "
+
 
 }
